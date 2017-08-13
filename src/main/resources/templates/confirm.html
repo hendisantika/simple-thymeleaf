@@ -29,54 +29,51 @@
                 </tr>
                 <tr>
                     <th>Number type text (ftnum)</th>
-                    <td th:text="*{ftnum}"></
-                    <>tr
-                </
-                >td>
-            </
-            "* {fareaNl2br}"=th: utexttd<>th</Textarea Farea)>th<>tr<>tr
-        </
-        >td>
-    </
-    "* {fnum}"=th: texttd<>th</Number (fnum)>th<>tr<>tr
-</
->Tdtr>
-<th>Email (femail)</th>
-<tdth:text
-="*{femail}"></td></tr>
-<tr>
-    <th>password (fpass)</th>
-    <tdth:text
-    ="*{fpass}"></td></tr>
-<tr>
-    <th>single select (fselect)</th>
-    <tdth:text
-    ="*{fselect}"></td></tr>
-<tr>
-    <th>multi select (fselect)</th>
-    <td>
-        <pth:each
-        ="c : *{fmselect}"th:text="${c}"></p></td>
-</tr>
-<tr>
-    <th>single checkbox (fcheck)</th>
-    <tdth:text
-    ="*{fcheck}"></td></tr>
-<tr>
-    <th>multi checkbox (fchecks)</th>
-    <td>
-        <pth:each
-        ="c : *{fchecks}"th:text="${c}"></p></td>
-</tr>
-<tr>
-    <th>radio (fradio)</th>
-    <tdth:text
-    ="*{fradio}"></td></tr>
-</table>text="*{fradio}"></td></tr></table>text="*{fradio}"></td></tr></table>
-</div>
-</div>
+                    <td th:text="*{ftnum}"></td>
+                </tr>
+                <tr>
+                    <th>Textarea (farea)</th>
+                    <td th:utext="*{fareaNl2br}"></td>
+                </tr>
 
-<div th:replace="_temp :: footer"></div>
+                <tr>
+                    <th>Email (femail)</th>
+                    <td th:text="*{femail}"></td>
+                </tr>
+                <tr>
+                    <th>password (fpass)</th>
+                    <td th:text="*{fpass}"></td>
+                </tr>
+                <tr>
+                    <th>single select (fselect)</th>
+                    <td th:text
+                    ="*{fselect}"></td></tr>
+                <tr>
+                    <th>multi select (fselect)</th>
+                    <td>
+                        <p th:each="c : *{fmselect}" th:text="${c}">Awawawa</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>single checkbox (fcheck)</th>
+                    <td th:text
+                    ="*{fcheck}"></td></tr>
+                <tr>
+                    <th>multi checkbox (fchecks)</th>
+                    <td>
+                        <p th:each
+                        ="c : *{fchecks}"th:text="${c}"></p></td>
+                </tr>
+                <tr>
+                    <th>radio (fradio)</th>
+                    <td th:text
+                    ="*{fradio}"></td></tr>
+            </table>
+            text="*{fradio}"></td></tr></table>text="*{fradio}"></td></tr></table>
+        </div>
+    </div>
+
+    <div th:replace="_temp :: footer"></div>
 </div>
 
 <div th:include="_temp :: script"></div>

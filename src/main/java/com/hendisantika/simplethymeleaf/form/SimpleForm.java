@@ -63,7 +63,113 @@ public class SimpleForm implements Serializable{
     @Pattern(regexp = "A|B|C|D|E")
     private String fradio;
 
-    // I omit getter / setter
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getFtext() {
+        return ftext;
+    }
+
+    public void setFtext(String ftext) {
+        this.ftext = ftext;
+    }
+
+    public String getFtdate() {
+        return ftdate;
+    }
+
+    public void setFtdate(String ftdate) {
+        this.ftdate = ftdate;
+    }
+
+    public LocalDate getFdate() {
+        return fdate;
+    }
+
+    public void setFdate(LocalDate fdate) {
+        this.fdate = fdate;
+    }
+
+    public String getFtnum() {
+        return ftnum;
+    }
+
+    public void setFtnum(String ftnum) {
+        this.ftnum = ftnum;
+    }
+
+    public Integer getFnum() {
+        return fnum;
+    }
+
+    public void setFnum(Integer fnum) {
+        this.fnum = fnum;
+    }
+
+    public String getFarea() {
+        return farea;
+    }
+
+    public void setFarea(String farea) {
+        this.farea = farea;
+    }
+
+    public String getFemail() {
+        return femail;
+    }
+
+    public void setFemail(String femail) {
+        this.femail = femail;
+    }
+
+    public String getFpass() {
+        return fpass;
+    }
+
+    public void setFpass(String fpass) {
+        this.fpass = fpass;
+    }
+
+    public String getFselect() {
+        return fselect;
+    }
+
+    public void setFselect(String fselect) {
+        this.fselect = fselect;
+    }
+
+    public String[] getFmselect() {
+        return fmselect;
+    }
+
+    public void setFmselect(String[] fmselect) {
+        this.fmselect = fmselect;
+    }
+
+    public String getFcheck() {
+        return fcheck;
+    }
+
+    public void setFcheck(String fcheck) {
+        this.fcheck = fcheck;
+    }
+
+    public String[] getFchecks() {
+        return fchecks;
+    }
+
+    public void setFchecks(String[] fchecks) {
+        this.fchecks = fchecks;
+    }
+
+    public String getFradio() {
+        return fradio;
+    }
+
+    public void setFradio(String fradio) {
+        this.fradio = fradio;
+    }
 
     public String getFareaNl2br() {
         if (StringUtils.isNotEmpty(this.farea)) {
