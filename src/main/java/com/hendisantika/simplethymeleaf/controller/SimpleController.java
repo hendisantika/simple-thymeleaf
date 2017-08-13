@@ -80,12 +80,12 @@ public class SimpleController {
         binder.registerCustomEditor(String.class, new StringTrimmerEditor(true));
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public String index(SimpleForm form, Model model) {
         model.addAttribute("selectItems", SELECT_ITEMS);
         model.addAttribute("checkItems", CHECK_ITEMS);
         model.addAttribute("radioItems", RADIO_ITEMS);
-        return "Simple/index";
+        return "index";
     }
 
     @RequestMapping(value = "/confirm", method = RequestMethod.POST)
@@ -94,6 +94,6 @@ public class SimpleController {
             model.addAttribute("validationError", "不正な値が入力されました。");
             return index(form, model);
         }
-        return "Simple/confirm";
+        return "confirm";
     }
 }
