@@ -96,7 +96,8 @@
                     <label class="control-label">Multi checkbox</label>
                     <div class="checkbox" th:each="item : ${checkItems}">
                         <label>
-                            <input type="checkbox" name="fchecks" th:value="${item.value}" th:text="${item.key}" th:field="*{fchecks}">checkbox</input>
+                            <input type="checkbox" name="fchecks" th:value="${item.value}" th:text="${item.key}"
+                                   th:field="*{fchecks}"> checkbox</input>
                         </label>
                     </div>
                     <span th:if="${#fields.hasErrors('fchecks')}" th:errors="*{fchecks}" class="help-block">error!</span>
@@ -106,7 +107,8 @@
                     <label class="control-label"><abbr title="required">*</abbr> Radio</label>
                     <div class="radio" th:each="item : ${radioItems}">
                         <label>
-                            <input type="radio" name="fradio" th:value="${item.value}" th:text="${item.key}" th:field="*{fradio}">radio</input>
+                            <input type="radio" name="fradio" th:value="${item.value}" th:text="${item.key}"
+                                   th:field="*{fradio}"> radio</input>
                         </label>
                     </div>
                     <span th:if="${#fields.hasErrors('fradio')}" th:errors="*{fradio}" class="help-block">error!</span>

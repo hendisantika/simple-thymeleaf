@@ -9,10 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -80,7 +77,7 @@ public class SimpleController {
         binder.registerCustomEditor(String.class, new StringTrimmerEditor(true));
     }
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @GetMapping
     public String index(SimpleForm form, Model model) {
         model.addAttribute("selectItems", SELECT_ITEMS);
         model.addAttribute("checkItems", CHECK_ITEMS);
@@ -88,7 +85,7 @@ public class SimpleController {
         return "index";
     }
 
-    @RequestMapping(value = "/confirm", method = RequestMethod.POST)
+    @PostMapping("/confirm")
     public String confirm(@Validated @ModelAttribute SimpleForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
             model.addAttribute("validationError", "不正な値が入力されました。");
