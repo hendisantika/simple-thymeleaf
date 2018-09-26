@@ -36,11 +36,11 @@ public class SimpleController {
     final static Map<String, String> SELECT_ITEMS =
             Collections.unmodifiableMap(new LinkedHashMap<String, String>() {
                 {
-                    put("select_A", "A");
-                    put("select_B", "B");
-                    put("select_C", "C");
-                    put("select_D", "D");
-                    put("select_E", "E");
+                    put(" select_A", "A");
+                    put(" select_B", "B");
+                    put(" select_C", "C");
+                    put(" select_D", "D");
+                    put(" select_E", "E");
                 }
             });
 
@@ -50,11 +50,11 @@ public class SimpleController {
     final static Map<String, String> CHECK_ITEMS =
             Collections.unmodifiableMap(new LinkedHashMap<String, String>() {
                 {
-                    put("checkbox_A", "A");
-                    put("checkbox_B", "B");
-                    put("checkbox_C", "C");
-                    put("checkbox_D", "D");
-                    put("checkbox_E", "E");
+                    put(" checkbox_A", "A");
+                    put(" checkbox_B", "B");
+                    put(" checkbox_C", "C");
+                    put(" checkbox_D", "D");
+                    put(" checkbox_E", "E");
                 }
             });
 
@@ -64,11 +64,11 @@ public class SimpleController {
     final static Map<String, String> RADIO_ITEMS =
             Collections.unmodifiableMap(new LinkedHashMap<String, String>() {
                 {
-                    put("radio_A", "A");
-                    put("radio_B", "B");
-                    put("radio_C", "C");
-                    put("radio_D", "D");
-                    put("radio_E", "E");
+                    put(" radio_A", "A");
+                    put(" radio_B", "B");
+                    put(" radio_C", "C");
+                    put(" radio_D", "D");
+                    put(" radio_E", "E");
                 }
             });
 
