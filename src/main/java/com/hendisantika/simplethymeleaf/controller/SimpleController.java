@@ -88,7 +88,6 @@ public class SimpleController {
     @PostMapping("/confirm")
     public String confirm(@Validated @ModelAttribute SimpleForm form, BindingResult result, Model model) {
         if (result.hasErrors()) {
-//            model.addAttribute("validationError", "不正な値が入力されました。");
             model.addAttribute("validationError", "An invalid value was entered.");
             return index(form, model);
         }
